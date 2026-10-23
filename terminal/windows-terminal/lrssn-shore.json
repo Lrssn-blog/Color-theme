@@ -1,0 +1,23 @@
+{
+  "name": "Lrssn Shore",
+  "background": "#fdf6ea",
+  "foreground": "#13303d",
+  "cursorColor": "#e05a00",
+  "selectionBackground": "#c6ebef",
+  "black": "#13303d",
+  "red": "#bd3722",
+  "green": "#2b7a3f",
+  "yellow": "#946000",
+  "blue": "#00629c",
+  "purple": "#c2215a",
+  "cyan": "#00756a",
+  "white": "#e8dcc6",
+  "brightBlack": "#6f7c81",
+  "brightRed": "#e0533a",
+  "brightGreen": "#3d9a55",
+  "brightYellow": "#b87d00",
+  "brightBlue": "#1a7fc4",
+  "brightPurple": "#d94a85",
+  "brightCyan": "#00928a",
+  "brightWhite": "#fffbf4"
+}

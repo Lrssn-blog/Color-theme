@@ -1,0 +1,7 @@
+# Python caches.
+__pycache__/
+.mypy_cache/
+.ruff_cache/
+
+# Dependencies of npx.
+node_modules/

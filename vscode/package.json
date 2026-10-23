@@ -1,0 +1,31 @@
+{
+  "name": "lrssn-themes",
+  "displayName": "Lrssn Hearth and Shore",
+  "description": "Lrssn Hearth, a dark theme of a cottage on New Year's Eve, and Lrssn Shore, a light theme of a beach on a summer evening.",
+  "version": "1.0.0",
+  "publisher": "lrssn",
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lrssn-blog/ColorTheme"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Themes"],
+  "keywords": ["theme", "dark", "light", "orange", "lrssn"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Lrssn Hearth",
+        "uiTheme": "vs-dark",
+        "path": "./themes/lrssn-hearth-color-theme.json"
+      },
+      {
+        "label": "Lrssn Shore",
+        "uiTheme": "vs",
+        "path": "./themes/lrssn-shore-color-theme.json"
+      }
+    ]
+  }
+}

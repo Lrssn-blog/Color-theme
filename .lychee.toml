@@ -1,0 +1,4 @@
+# Link check settings for CI. Run locally with: lychee --config .lychee.toml '**/*.md'
+no_progress = true
+max_retries = 3
+accept = ["200", "429"]
