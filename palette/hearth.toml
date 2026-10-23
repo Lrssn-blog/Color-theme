@@ -1,0 +1,145 @@
+# Lrssn Hearth: a cottage on New Year's Eve.
+# Warm inside, by a log fire, and cold outside, where fireworks go off.
+#
+# The surfaces are the dark timber of the room, and the text is candlelight.
+# The fire gives the orange, gold and ember colours, the frost outside gives
+# the cool comments, borders and types, and the fireworks give the pops.
+#
+# A value is a HEX colour, or `@role` for the value of another role.
+# After a change, run `scripts/build.py --write`.
+
+[meta]
+name = "Lrssn Hearth"
+slug = "lrssn-hearth"
+mode = "dark"
+
+[colors]
+# Surfaces: the room.
+bg = "#1a1512"            # Smoked timber: the editor and the terminal.
+bg-dim = "#15110f"        # Sidebars and panels.
+bg-deep = "#0f0c0a"       # Title bars and the darkest edges.
+bg-line = "#211a16"       # The current line.
+bg-raised = "#2a211c"     # Popups, menus and hover.
+selection = "#47301f"     # Ember glow.
+border = "#2e343c"        # Frost on the window frame.
+shadow = "#000000"        # Shadows under popups.
+
+# Text: candlelight, with the frost for the quiet parts.
+fg = "#f0e3d0"            # Candle cream.
+fg-bright = "#fff6e8"
+fg-muted = "#a3aebb"      # Frost: secondary interface text.
+fg-subtle = "#6b7684"     # Line numbers, whitespace and inactive items.
+comment = "#8796aa"       # Frost blue, the cold outside.
+
+# Brand.
+primary = "#fc6600"       # The fire. Never white text on it.
+primary-text = "#ff8a3d"
+primary-soft = "#3a1f0e"
+on-primary = "#14171c"
+accent = "@primary"       # Cursors, focus and active items.
+secondary = "#4d94b8"     # Ice: fills, borders and bars.
+secondary-text = "#8cc8e3"
+secondary-soft = "#142430"
+
+# Syntax.
+keyword = "@primary"      # The fire.
+function = "#ffb547"      # Flame gold.
+string = "#a9d48f"        # Green sparkler.
+number = "#ff88c8"        # Pink firework.
+type = "#7fcbe6"          # Ice.
+builtin = "#c4a5ff"       # Violet firework.
+tag = "#ff6b4f"           # Ember.
+property = "#ebc69d"      # Birch.
+parameter = "#f7d2aa"     # Firelit birch.
+operator = "#f09a62"      # Glowing coal.
+punctuation = "#a8998b"   # Ash.
+escape = "#ffe08a"        # Golden sparks.
+
+# Status and diff.
+error = "#ff6b5e"
+warning = "@function"
+info = "@type"
+hint = "@string"
+success = "@string"
+added = "#93c97c"
+removed = "@error"
+changed = "@function"
+added-soft = "#1e2a18"
+removed-soft = "#361815"
+changed-soft = "#33260f"
+
+[ansi]
+black = "@bg-raised"
+red = "@error"
+green = "@string"
+yellow = "@function"
+blue = "#86aaea"          # The night sky.
+magenta = "@number"
+cyan = "@type"
+white = "#e3d4bf"
+bright-black = "@fg-subtle"
+bright-red = "#ff9083"
+bright-green = "#c3e5aa"
+bright-yellow = "#ffd47a"
+bright-blue = "#abc4f3"
+bright-magenta = "#ffb0dc"
+bright-cyan = "#a9e0f2"
+bright-white = "@fg-bright"
+
+[omarchy]
+brown = "#7a4a2e"         # Logs in the fire.
+
+# The tokens of the Lrssn website, in the order of `$theme-dark` in
+# src/styles/_variables.scss of Lrssn-com.
+[website]
+primary-color = "@primary"
+primary-text = "@primary-text"
+primary-soft = "@primary-soft"
+secondary-color = "@secondary"
+secondary-text = "@secondary-text"
+secondary-soft = "@secondary-soft"
+link-color = "@primary-text"
+focus-color = "@primary"
+background = "@bg"
+surface = "@bg-line"
+surface-subtle = "#1d1714"
+surface-muted = "#28201b"
+surface-hover = "#2f2620"
+surface-sunken = "#120e0c"
+header-background = "@bg"
+header-border = "@border"
+admin-header-background = "@bg-deep"
+text-color = "@fg"
+text-strong = "@fg-bright"
+text-body = "#e0d3c0"
+text-muted = "@fg-muted"
+text-subtle = "#95a0ad"
+text-on-dark = "@fg-bright"
+text-on-primary = "@on-primary"
+border-color = "@border"
+border-color-light = "#262b32"
+border-color-muted = "#363d47"
+border-color-fieldset = "#363d47"
+border-color-input = "#76818f"
+border-color-strong = "#515b68"
+border-color-tree = "#1d3340"
+success-color = "@success"
+success-background = "@added-soft"
+success-border = "#34492a"
+danger-color = "@error"
+danger-background = "@removed-soft"
+danger-border = "#5c2a24"
+notification-badge = "#b8321e"
+banner-info-background = "@secondary-soft"
+banner-info-color = "#a6d6ec"
+banner-warning-background = "@changed-soft"
+banner-warning-color = "#ffcf70"
+banner-error-background = "@removed-soft"
+banner-error-color = "#ffa196"
+banner-success-background = "@added-soft"
+banner-success-color = "#b8e0a0"
+tag-background-hover = "@primary-soft"
+image-placeholder-start = "#28201b"
+image-placeholder-end = "#3a2f28"
+resource-icon-color = "@secondary-text"
+resource-kind-color = "@fg-muted"

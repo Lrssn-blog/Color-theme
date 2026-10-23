@@ -1,0 +1,146 @@
+# Lrssn Shore: a warm summer evening on a beach, with a bonfire.
+# The water is a clear tropical blue, and the corals give pops of colour.
+#
+# The surfaces are warm sand, and the text is the deep water of the lagoon.
+# The bonfire gives the orange, the water gives the blues and teals, and the
+# corals give the pinks, reds and purples.
+#
+# A value is a HEX colour, or `@role` for the value of another role.
+# After a change, run `scripts/build.py --write`.
+
+[meta]
+name = "Lrssn Shore"
+slug = "lrssn-shore"
+mode = "light"
+
+[colors]
+# Surfaces: the beach.
+bg = "#fdf6ea"            # Warm sand: the editor and the terminal.
+bg-dim = "#f5ead7"        # Sidebars and panels.
+bg-deep = "#ecdfc8"       # Title bars and the darkest edges.
+bg-line = "#f8eedd"       # The current line.
+bg-raised = "#fffbf4"     # Popups, menus and hover.
+selection = "#c6ebef"     # Clear water.
+border = "#e3d3b9"        # Wet sand.
+shadow = "#6b4a2a"        # Shadows under popups: warm, like on sand.
+
+# Text: the deep water of the lagoon, and driftwood for the quiet parts.
+fg = "#13303d"            # Deep lagoon.
+fg-bright = "#0a1f29"
+fg-muted = "#4f6470"      # Secondary interface text.
+fg-subtle = "#7c898e"     # Line numbers, whitespace and inactive items.
+comment = "#76664e"       # Driftwood.
+
+# Brand.
+primary = "#fc6600"       # The bonfire. Never text on sand, never white on it.
+primary-text = "#b04600"
+primary-soft = "#ffe3cc"
+on-primary = "#14171c"
+accent = "#e05a00"        # Cursors, focus and active items: the bonfire, deep
+                          # enough to show on sand.
+secondary = "#00999a"     # Tropical water: fills, borders and bars.
+secondary-text = "#00737a"
+secondary-soft = "#d2f1ee"
+
+# Syntax.
+keyword = "@primary-text" # The bonfire.
+function = "#00629c"      # Deep tropical water.
+string = "#00756a"        # The lagoon.
+number = "#c2215a"        # Pink coral.
+type = "#3550b0"          # The reef wall.
+builtin = "#8a3fbf"       # Sea urchin.
+tag = "#bd3722"           # Red coral.
+property = "#7a5000"      # Sunset amber.
+parameter = "#6a4b33"     # Wet driftwood.
+operator = "#a4521c"      # Embers.
+punctuation = "#6b6152"   # Pebbles.
+escape = "#b02f86"        # Orchid coral.
+
+# Status and diff.
+error = "#c4262e"
+warning = "#965a00"
+info = "@function"
+hint = "@string"
+success = "#1c7448"
+added = "#24773f"
+removed = "@error"
+changed = "#8f5e00"
+added-soft = "#dcf0dc"
+removed-soft = "#fbe0dc"
+changed-soft = "#fbecc9"
+
+[ansi]
+black = "@fg"
+red = "@tag"
+green = "#2b7a3f"
+yellow = "#946000"
+blue = "@function"
+magenta = "@number"
+cyan = "@string"
+white = "#e8dcc6"
+bright-black = "#6f7c81"
+bright-red = "#e0533a"
+bright-green = "#3d9a55"
+bright-yellow = "#b87d00"
+bright-blue = "#1a7fc4"
+bright-magenta = "#d94a85"
+bright-cyan = "#00928a"
+bright-white = "@bg-raised"
+
+[omarchy]
+brown = "#8a6a45"         # Driftwood.
+
+# The tokens of the Lrssn website, in the order of `$theme-light` in
+# src/styles/_variables.scss of Lrssn-com.
+[website]
+primary-color = "@primary"
+primary-text = "@primary-text"
+primary-soft = "@primary-soft"
+secondary-color = "@secondary"
+secondary-text = "@secondary-text"
+secondary-soft = "@secondary-soft"
+link-color = "@primary-text"
+focus-color = "@primary-text"
+background = "@bg"
+surface = "@bg-raised"
+surface-subtle = "#f8efe0"
+surface-muted = "#f3e8d5"
+surface-hover = "#efe2cc"
+surface-sunken = "#f3e8d5"
+header-background = "@bg"
+header-border = "@border"
+admin-header-background = "#15323f"
+text-color = "@fg"
+text-strong = "@fg-bright"
+text-body = "#24404c"
+text-muted = "@fg-muted"
+text-subtle = "#5c6e77"
+text-on-dark = "@bg-raised"
+text-on-primary = "@on-primary"
+border-color = "@border"
+border-color-light = "#ede2cf"
+border-color-muted = "#dccbb0"
+border-color-fieldset = "#dccbb0"
+border-color-input = "#8a7e6c"
+border-color-strong = "#b5a588"
+border-color-tree = "#bfe6e3"
+success-color = "@success"
+success-background = "#e1f1e4"
+success-border = "#b8d9c0"
+danger-color = "@error"
+danger-background = "#fbe5e1"
+danger-border = "#f0c2ba"
+notification-badge = "@error"
+banner-info-background = "@secondary-soft"
+banner-info-color = "#00646a"
+banner-warning-background = "#fdeccb"
+banner-warning-color = "#7a4f00"
+banner-error-background = "#fbe0dc"
+banner-error-color = "#8a1f1f"
+banner-success-background = "#dff0e2"
+banner-success-color = "#1e6b3c"
+tag-background-hover = "@primary-soft"
+image-placeholder-start = "#f3e8d5"
+image-placeholder-end = "#e3d3b8"
+resource-icon-color = "@secondary-text"
+resource-kind-color = "@fg-muted"

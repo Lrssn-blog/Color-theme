@@ -1,0 +1,23 @@
+{
+  "name": "Lrssn Hearth",
+  "background": "#1a1512",
+  "foreground": "#f0e3d0",
+  "cursorColor": "#fc6600",
+  "selectionBackground": "#47301f",
+  "black": "#2a211c",
+  "red": "#ff6b5e",
+  "green": "#a9d48f",
+  "yellow": "#ffb547",
+  "blue": "#86aaea",
+  "purple": "#ff88c8",
+  "cyan": "#7fcbe6",
+  "white": "#e3d4bf",
+  "brightBlack": "#6b7684",
+  "brightRed": "#ff9083",
+  "brightGreen": "#c3e5aa",
+  "brightYellow": "#ffd47a",
+  "brightBlue": "#abc4f3",
+  "brightPurple": "#ffb0dc",
+  "brightCyan": "#a9e0f2",
+  "brightWhite": "#fff6e8"
+}
