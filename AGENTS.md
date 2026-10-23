@@ -24,7 +24,7 @@ Run `scripts/build.py`, the Markdown lint, and Ruff and mypy before you say a ta
 - `palette/hearth.toml`, `palette/shore.toml`: the colours, as named roles.
 - `templates/`: one template per generated file, with `{{ role }}` placeholders.
 - `scripts/build.py`: renders the templates, writes the website maps, the Neovim palettes and the tables of `Theme.md`, and checks the contrast.
-- `vscode/`, `colors/`, `lua/`, `terminal/`, `omarchy/`, `website/`, `latex/`, `art/` and `preview/`: the generated themes.
+- `vscode/`, `colors/`, `lua/`, `terminal/`, `omarchy/`, `homarr/`, `website/`, `latex/`, `art/` and `preview/`: the generated themes.
 - `vscode/package.json`, `lua/lrssn/init.lua` and `lua/lrssn/lualine.lua` are written by hand.
 - `.github/workflows/`: CI.
 

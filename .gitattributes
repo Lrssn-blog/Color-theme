@@ -2,6 +2,7 @@
 # GitHub collapses them in diffs; change the palette or the template instead.
 art/*.html linguist-generated
 colors/*.lua linguist-generated
+homarr/*.css linguist-generated
 latex/*.sty linguist-generated
 lua/lrssn/palettes.lua linguist-generated
 lua/lualine/themes/*.lua linguist-generated

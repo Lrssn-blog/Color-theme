@@ -22,6 +22,7 @@ To see both themes side by side, open [`preview/index.html`](./preview/index.htm
 | Neovim | [`colors/`](./colors), [`lua/`](./lua) | [Neovim](#neovim) |
 | Alacritty, Ghostty, kitty, Windows Terminal and iTerm2 | [`terminal/`](./terminal) | [Terminals](#terminals) |
 | Omarchy | [`omarchy/`](./omarchy) | [Omarchy](#omarchy) |
+| Homarr | [`homarr/lrssn.css`](./homarr/lrssn.css) | [Homarr](#homarr) |
 | The Lrssn website | [`website/_theme.scss`](./website/_theme.scss) | [The website](#the-website) |
 | LaTeX | [`latex/lrssntheme.sty`](./latex/lrssntheme.sty) | [LaTeX](#latex) |
 
@@ -103,6 +104,17 @@ That command expects the theme at the root of a repository, and it drops the `ne
 
 The Omarchy themes do not include a VS Code theme, so install the [VS Code extension](#vs-code) as well.
 
+### Homarr
+
+Paste [`homarr/lrssn.css`](./homarr/lrssn.css) into **Board settings > Custom CSS** for one board, or into **Management > Settings > Instance branding > Custom CSS** for every board.
+Homarr shows Shore when its colour scheme is light and Hearth when it is dark, and each user can switch between them.
+
+Also set the board's colours in **Board settings**: the primary colour to `#fc6600` and the secondary colour to `#00999a`.
+Homarr chooses the text colour on buttons from these settings, and with `#fc6600` it chooses dark text, as the brand asks.
+
+The file sets the CSS variables of Mantine, the component library that Homarr is built on, so it themes the board, the widgets, the menus and the forms.
+It was written against Homarr 2.8.
+
 ### The website
 
 [`website/_theme.scss`](./website/_theme.scss) holds the two maps of the Lrssn website's stylesheet: Shore as `$theme-light` and Hearth as `$theme-dark`.
@@ -142,7 +154,7 @@ The [colour guide](./Theme.md#roles) lists what each role is for.
 - `scripts/build.py`: generates the files, and checks the contrast.
 - `scripts/render-art.sh`: renders the wallpapers in `art/` and the previews to PNG.
 - `Theme.md`: the colour guide, whose tables are generated.
-- `vscode/`, `colors/`, `lua/`, `terminal/`, `omarchy/`, `website/` and `latex/`: the themes.
+- `vscode/`, `colors/`, `lua/`, `terminal/`, `omarchy/`, `homarr/`, `website/` and `latex/`: the themes.
 - `art/`: the wallpapers, drawn on a canvas in the palette's colours.
 - `preview/`: a page that shows both themes.
 
