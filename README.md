@@ -2,7 +2,7 @@
 
 This repo holds the Lrssn colour themes: **Lrssn Hearth**, a dark theme, and **Lrssn Shore**, a light theme.
 Both are built around the brand orange `#fc6600`.
-It is a companion to the [Lrssn style guides](https://github.com/Lrssn-blog/Style-guide) and the [Lrssn brand guide](https://github.com/Lrssn-blog/Brand-guide).
+It is a companion to the [Lrssn style guides](https://github.com/Lrssn-blog/Style-guide), the [Lrssn brand guide](https://github.com/Lrssn-blog/Brand-guide) and the [Lrssn design system](https://github.com/Lrssn-blog/Design-system).
 
 - **Lrssn Hearth** is a cottage on New Year's Eve: warm inside by the log fire, and cold outside, where fireworks go off over the snow.
 - **Lrssn Shore** is a warm summer evening on a beach, with a bonfire, clear tropical water and coral.
@@ -122,6 +122,7 @@ They have the same 51 tokens, in the same order, as `src/styles/_variables.scss`
 To use the themes on the website, replace the two maps in that file with these.
 
 The [brand guide](https://github.com/Lrssn-blog/Brand-guide) checks its colour tables against the website's stylesheet, so update its tables in the same change.
+The [design system](https://github.com/Lrssn-blog/Design-system) reads `palette/*.toml` too, and its build checks every week that its files match them, so after renaming a role or a website token, update it as well.
 
 ### LaTeX
 
