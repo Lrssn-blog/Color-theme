@@ -208,5 +208,6 @@ To add a target, add a template to `templates/` and its output path to `PER_THEM
 
 - [README](./README.md)
 - [Lrssn brand guide](https://github.com/Lrssn-blog/Brand-guide)
+- [Lrssn design system](https://github.com/Lrssn-blog/Design-system)
 - [Lrssn style guides](https://github.com/Lrssn-blog/Style-guide)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
