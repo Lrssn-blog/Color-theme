@@ -1,4 +1,4 @@
-# ColorTheme
+# Color-theme
 
 This repo holds the Lrssn colour themes: **Lrssn Hearth**, a dark theme, and **Lrssn Shore**, a light theme.
 Both are built around the brand orange `#fc6600`.
@@ -32,8 +32,8 @@ Every file in those folders is generated from [`palette/hearth.toml`](./palette/
 Clone the repository first:
 
 ```bash
-git clone https://github.com/Lrssn-blog/ColorTheme.git
-cd ColorTheme
+git clone https://github.com/Lrssn-blog/Color-theme.git
+cd Color-theme
 ```
 
 ### VS Code
@@ -53,7 +53,7 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-  'Lrssn-blog/ColorTheme',
+  'Lrssn-blog/Color-theme',
   name = 'lrssn',
   lazy = false,
   priority = 1000,
