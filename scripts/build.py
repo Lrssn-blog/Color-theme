@@ -49,6 +49,7 @@ PER_THEME = {
 # The placeholders name the theme first, such as `{{ hearth.bg }}`.
 COMBINED = {
     'lrssntheme.sty': 'latex/lrssntheme.sty',
+    'homarr.css': 'homarr/lrssn.css',
     'preview.html': 'preview/index.html',
     'art-hearth.html': 'art/hearth.html',
     'art-shore.html': 'art/shore.html',
