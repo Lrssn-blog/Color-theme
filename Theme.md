@@ -15,7 +15,7 @@ To install a theme, see the [README](./README.md).
 
 A cottage on New Year's Eve: warm inside, by a log fire, and cold outside, where fireworks go off over the snow.
 
-- The surfaces are the smoked timber of the room, and the text is candlelight.
+- The surfaces are the forest at night, seen from the room, and the text is candlelight.
 - The fire gives the orange keywords, the gold functions and the ember tags.
 - The frost outside gives the cool blue comments, line numbers and borders, and the icy types.
 - The fireworks give the pops: pink numbers, violet built-ins and green sparkler strings.
@@ -43,7 +43,7 @@ A warm summer evening on a beach, with a bonfire.
   Text on an orange fill uses `on-primary`, and never white.
 - **Tell the story.**
   The themes follow the scenes above, rather than the brand guide's rule to keep the neutrals cool.
-  Their neutrals are warm timber and warm sand on purpose.
+  Their neutrals are forest green and warm sand on purpose.
 - **Give each role one meaning.**
   A colour means the same thing in the editor, the terminal, the website and a PDF.
 
@@ -77,12 +77,12 @@ In Shore it is a deeper orange, `#e05a00`, because `#fc6600` has a contrast rati
 <!-- generated:palette -->
 | Role | Lrssn Hearth | Lrssn Shore |
 | --- | --- | --- |
-| `bg` | `#1a1512` | `#fdf6ea` |
-| `bg-dim` | `#15110f` | `#f5ead7` |
-| `bg-deep` | `#0f0c0a` | `#ecdfc8` |
-| `bg-line` | `#211a16` | `#f8eedd` |
-| `bg-raised` | `#2a211c` | `#fffbf4` |
-| `selection` | `#47301f` | `#c6ebef` |
+| `bg` | `#101a16` | `#fdf6ea` |
+| `bg-dim` | `#0c1411` | `#f5ead7` |
+| `bg-deep` | `#080e0b` | `#ecdfc8` |
+| `bg-line` | `#15211c` | `#f8eedd` |
+| `bg-raised` | `#1c2b24` | `#fffbf4` |
+| `selection` | `#24402f` | `#c6ebef` |
 | `border` | `#2e343c` | `#e3d3b9` |
 | `shadow` | `#000000` | `#6b4a2a` |
 | `fg` | `#f0e3d0` | `#13303d` |
@@ -128,7 +128,7 @@ In Shore it is a deeper orange, `#e05a00`, because `#fc6600` has a contrast rati
 <!-- generated:ansi -->
 | Role | Lrssn Hearth | Lrssn Shore |
 | --- | --- | --- |
-| `ansi.black` | `#2a211c` | `#13303d` |
+| `ansi.black` | `#1c2b24` | `#13303d` |
 | `ansi.red` | `#ff6b5e` | `#bd3722` |
 | `ansi.green` | `#a9d48f` | `#2b7a3f` |
 | `ansi.yellow` | `#ffb547` | `#946000` |
@@ -165,32 +165,32 @@ The ratio of each text colour on `bg`:
 <!-- generated:contrast -->
 | Role | Lrssn Hearth | Lrssn Shore |
 | --- | --- | --- |
-| `fg` | 14.31 | 12.88 |
-| `fg-bright` | 16.90 | 15.75 |
-| `fg-muted` | 8.04 | 5.77 |
-| `comment` | 6.01 | 5.17 |
-| `primary-text` | 7.72 | 5.25 |
-| `secondary-text` | 9.90 | 5.24 |
-| `keyword` | 6.07 | 5.25 |
-| `function` | 10.30 | 6.06 |
-| `string` | 10.78 | 5.21 |
-| `number` | 8.28 | 5.34 |
-| `type` | 9.99 | 6.68 |
-| `builtin` | 8.77 | 5.52 |
-| `tag` | 6.44 | 5.24 |
-| `property` | 11.29 | 6.57 |
-| `parameter` | 12.72 | 7.33 |
-| `operator` | 8.19 | 5.14 |
-| `punctuation` | 6.55 | 5.65 |
-| `escape` | 14.04 | 5.43 |
-| `error` | 6.48 | 5.34 |
-| `warning` | 10.30 | 5.20 |
-| `info` | 9.99 | 6.06 |
-| `hint` | 10.78 | 5.21 |
-| `success` | 10.78 | 5.37 |
-| `added` | 9.39 | 5.16 |
-| `removed` | 6.48 | 5.34 |
-| `changed` | 10.30 | 5.19 |
+| `fg` | 14.05 | 12.88 |
+| `fg-bright` | 16.59 | 15.75 |
+| `fg-muted` | 7.90 | 5.77 |
+| `comment` | 5.90 | 5.17 |
+| `primary-text` | 7.58 | 5.25 |
+| `secondary-text` | 9.72 | 5.24 |
+| `keyword` | 5.96 | 5.25 |
+| `function` | 10.12 | 6.06 |
+| `string` | 10.58 | 5.21 |
+| `number` | 8.13 | 5.34 |
+| `type` | 9.81 | 6.68 |
+| `builtin` | 8.61 | 5.52 |
+| `tag` | 6.32 | 5.24 |
+| `property` | 11.09 | 6.57 |
+| `parameter` | 12.49 | 7.33 |
+| `operator` | 8.04 | 5.14 |
+| `punctuation` | 6.43 | 5.65 |
+| `escape` | 13.78 | 5.43 |
+| `error` | 6.36 | 5.34 |
+| `warning` | 10.12 | 5.20 |
+| `info` | 9.81 | 6.06 |
+| `hint` | 10.58 | 5.21 |
+| `success` | 10.58 | 5.37 |
+| `added` | 9.21 | 5.16 |
+| `removed` | 6.36 | 5.34 |
+| `changed` | 10.12 | 5.19 |
 <!-- end:contrast -->
 
 ## Changing a colour

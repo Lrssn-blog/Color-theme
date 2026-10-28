@@ -26,7 +26,7 @@ const P = {
   green: '{{ hearth.string }}',
   ice: '{{ hearth.type }}',
   ember: '{{ hearth.tag }}',
-  wood: '{{ hearth.omarchy.brown }}',
+  wood: '{{ hearth.selection }}',
   night: '{{ hearth.ansi.blue }}',
 };
 // Colours of the night outside, which only the wallpaper uses.
@@ -73,7 +73,7 @@ function dot(x, y, radius, colour) {
   ctx.fill();
 }
 
-// The wall: timber planks.
+// The wall: dark green boards.
 ctx.fillStyle = P.bg;
 ctx.fillRect(0, 0, W, H);
 for (let x = 0, i = 0; x < W; x += 240, i++) {

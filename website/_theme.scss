@@ -78,15 +78,15 @@ $theme-dark: (
 	'link-color': #ff8a3d,
 	'focus-color': #fc6600,
 	// Surfaces
-	'background': #1a1512,
-	'surface': #211a16,
-	'surface-subtle': #1d1714,
-	'surface-muted': #28201b,
-	'surface-hover': #2f2620,
-	'surface-sunken': #120e0c,
-	'header-background': #1a1512,
+	'background': #101a16,
+	'surface': #15211c,
+	'surface-subtle': #121d18,
+	'surface-muted': #19261f,
+	'surface-hover': #1f2f27,
+	'surface-sunken': #0a110e,
+	'header-background': #101a16,
 	'header-border': #2e343c,
-	'admin-header-background': #0f0c0a,
+	'admin-header-background': #080e0b,
 	// Text
 	'text-color': #f0e3d0,
 	'text-strong': #fff6e8,
@@ -122,8 +122,8 @@ $theme-dark: (
 	'banner-success-color': #b8e0a0,
 	// Tags & media
 	'tag-background-hover': #3a1f0e,
-	'image-placeholder-start': #28201b,
-	'image-placeholder-end': #3a2f28,
+	'image-placeholder-start': #19261f,
+	'image-placeholder-end': #263a30,
 	'resource-icon-color': #8cc8e3,
 	'resource-kind-color': #a3aebb
 );

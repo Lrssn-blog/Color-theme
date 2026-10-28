@@ -72,18 +72,18 @@ html[data-mantine-color-scheme='light'] ::selection {
   color: #13303d;
 }
 
-/* Lrssn Hearth: smoked timber and candlelight, the fire and the frost outside. */
+/* Lrssn Hearth: forest green and candlelight, the fire and the frost outside. */
 html[data-mantine-color-scheme='dark']:root {
   /* Surfaces and text. */
-  --mantine-color-body: #1a1512;
+  --mantine-color-body: #101a16;
   --mantine-color-text: #f0e3d0;
   --mantine-color-bright: #fff6e8;
   --mantine-color-dimmed: #a3aebb;
   --mantine-color-placeholder: #6b7684;
   --mantine-color-anchor: #ff8a3d;
   --mantine-color-error: #ff6b5e;
-  --mantine-color-default: #2a211c;
-  --mantine-color-default-hover: #2f2620;
+  --mantine-color-default: #1c2b24;
+  --mantine-color-default-hover: #1f2f27;
   --mantine-color-default-color: #f0e3d0;
   --mantine-color-default-border: #2e343c;
 
@@ -93,11 +93,11 @@ html[data-mantine-color-scheme='dark']:root {
   --mantine-color-dark-2: #a3aebb;
   --mantine-color-dark-3: #6b7684;
   --mantine-color-dark-4: #2e343c;
-  --mantine-color-dark-5: #2f2620;
-  --mantine-color-dark-6: #2a211c;
-  --mantine-color-dark-7: #1a1512;
-  --mantine-color-dark-8: #15110f;
-  --mantine-color-dark-9: #0f0c0a;
+  --mantine-color-dark-5: #1f2f27;
+  --mantine-color-dark-6: #1c2b24;
+  --mantine-color-dark-7: #101a16;
+  --mantine-color-dark-8: #0c1411;
+  --mantine-color-dark-9: #080e0b;
 
   /* The brand orange. */
   --mantine-primary-color-filled: #fc6600;
@@ -127,6 +127,6 @@ html[data-mantine-color-scheme='dark']:root {
 }
 
 html[data-mantine-color-scheme='dark'] ::selection {
-  background-color: #47301f;
+  background-color: #24402f;
   color: #f0e3d0;
 }

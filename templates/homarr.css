@@ -72,7 +72,7 @@ html[data-mantine-color-scheme='light'] ::selection {
   color: {{ shore.fg }};
 }
 
-/* Lrssn Hearth: smoked timber and candlelight, the fire and the frost outside. */
+/* Lrssn Hearth: forest green and candlelight, the fire and the frost outside. */
 html[data-mantine-color-scheme='dark']:root {
   /* Surfaces and text. */
   --mantine-color-body: {{ hearth.bg }};

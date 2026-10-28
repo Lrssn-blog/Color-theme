@@ -1,7 +1,7 @@
 # Lrssn Hearth: a cottage on New Year's Eve.
 # Warm inside, by a log fire, and cold outside, where fireworks go off.
 #
-# The surfaces are the dark timber of the room, and the text is candlelight.
+# The surfaces are the forest seen through the window at night, and the text is candlelight.
 # The fire gives the orange, gold and ember colours, the frost outside gives
 # the cool comments, borders and types, and the fireworks give the pops.
 #
@@ -15,12 +15,12 @@ mode = "dark"
 
 [colors]
 # Surfaces: the room.
-bg = "#1a1512"            # Smoked timber: the editor and the terminal.
-bg-dim = "#15110f"        # Sidebars and panels.
-bg-deep = "#0f0c0a"       # Title bars and the darkest edges.
-bg-line = "#211a16"       # The current line.
-bg-raised = "#2a211c"     # Popups, menus and hover.
-selection = "#47301f"     # Ember glow.
+bg = "#101a16"            # Forest dark: the editor and the terminal.
+bg-dim = "#0c1411"        # Sidebars and panels.
+bg-deep = "#080e0b"       # Title bars and the darkest edges.
+bg-line = "#15211c"       # The current line.
+bg-raised = "#1c2b24"     # Popups, menus and hover.
+selection = "#24402f"     # Moss glow.
 border = "#2e343c"        # Frost on the window frame.
 shadow = "#000000"        # Shadows under popups.
 
@@ -102,10 +102,10 @@ link-color = "@primary-text"
 focus-color = "@primary"
 background = "@bg"
 surface = "@bg-line"
-surface-subtle = "#1d1714"
-surface-muted = "#28201b"
-surface-hover = "#2f2620"
-surface-sunken = "#120e0c"
+surface-subtle = "#121d18"
+surface-muted = "#19261f"
+surface-hover = "#1f2f27"
+surface-sunken = "#0a110e"
 header-background = "@bg"
 header-border = "@border"
 admin-header-background = "@bg-deep"
@@ -139,7 +139,7 @@ banner-error-color = "#ffa196"
 banner-success-background = "@added-soft"
 banner-success-color = "#b8e0a0"
 tag-background-hover = "@primary-soft"
-image-placeholder-start = "#28201b"
-image-placeholder-end = "#3a2f28"
+image-placeholder-start = "#19261f"
+image-placeholder-end = "#263a30"
 resource-icon-color = "@secondary-text"
 resource-kind-color = "@fg-muted"
