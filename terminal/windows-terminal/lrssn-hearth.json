@@ -1,10 +1,10 @@
 {
   "name": "Lrssn Hearth",
-  "background": "#1a1512",
+  "background": "#101a16",
   "foreground": "#f0e3d0",
   "cursorColor": "#fc6600",
-  "selectionBackground": "#47301f",
-  "black": "#2a211c",
+  "selectionBackground": "#24402f",
+  "black": "#1c2b24",
   "red": "#ff6b5e",
   "green": "#a9d48f",
   "yellow": "#ffb547",

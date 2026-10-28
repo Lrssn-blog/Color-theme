@@ -3,12 +3,12 @@
 return {
   ['lrssn-hearth'] = {
     mode = 'dark',
-    bg = '#1a1512',
-    bg_dim = '#15110f',
-    bg_deep = '#0f0c0a',
-    bg_line = '#211a16',
-    bg_raised = '#2a211c',
-    selection = '#47301f',
+    bg = '#101a16',
+    bg_dim = '#0c1411',
+    bg_deep = '#080e0b',
+    bg_line = '#15211c',
+    bg_raised = '#1c2b24',
+    selection = '#24402f',
     border = '#2e343c',
     shadow = '#000000',
     fg = '#f0e3d0',
@@ -48,7 +48,7 @@ return {
     removed_soft = '#361815',
     changed_soft = '#33260f',
     ansi = {
-      black = '#2a211c',
+      black = '#1c2b24',
       red = '#ff6b5e',
       green = '#a9d48f',
       yellow = '#ffb547',
