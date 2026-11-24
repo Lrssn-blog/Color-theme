@@ -126,7 +126,9 @@ The [design system](https://github.com/Lrssn-blog/Design-system) reads `palette/
 
 ### LaTeX
 
-Copy [`latex/lrssntheme.sty`](./latex/lrssntheme.sty) to your local TeX tree, for example `~/texmf/tex/latex/lrssntheme/`, and load it after the other packages and before `hyperref`:
+Copy [`latex/lrssntheme.sty`](./latex/lrssntheme.sty) to your local TeX tree, for example `~/texmf/tex/latex/lrssntheme/`.
+Copy the files in [`latex/fonts/`](./latex/fonts/) to `~/texmf/fonts/truetype/lrssntheme/`, or install them on the system.
+Load the package after the other packages and before `hyperref`:
 
 ```latex
 \usepackage[shore]{lrssntheme}
@@ -144,24 +146,28 @@ The options are:
 - `shore`, the default, for print: the page stays white, and the colours are Shore's.
 - `hearth`, for PDFs read on a screen: a dark page with light text.
 - `nolistings`, to leave out the style for `listings`.
+- `nofonts`, to keep the document's own fonts.
+
+Under LuaLaTeX, the package sets the brand fonts, in regular and bold: Merriweather for the text, Inter as the sans serif, Geist Mono for code and Playfair Display as `\displayfont`, for titles.
+The fonts are variable fonts, and only LuaLaTeX can set their weights, so under XeLaTeX and pdfLaTeX the package sets only the colours.
 
 The package defines semantic colours such as `LrssnText`, `LrssnPrimary`, `LrssnPrimaryText` and `LrssnKeyword`, so a document looks right with either option.
 The [colour guide](./Theme.md#roles) lists what each role is for.
 
-The `latex/templates/` directory contains ready-to-use XeLaTeX templates:
+The `latex/templates/` directory contains ready-to-use LuaLaTeX templates:
 
 - `presentation.tex` for Beamer presentations
 - `short-paper-titled.tex` for short papers with a title
 - `short-paper-no-title.tex` for short papers without a title
 - `scientific-paper.tex` for scientific papers
 
-The templates load the Merriweather, Inter, Geist Mono and Playfair Display fonts
-from `latex/fonts/`. Keep the fonts beside the `latex/` directory and compile a
-template with XeLaTeX:
+The templates load the package by its path, and the package loads the fonts from `latex/fonts/`, beside it.
+You need TeX Live's `texlive-luatex`, `texlive-latexextra`, `texlive-pictures`, `texlive-binextra` and `texlive-fontsrecommended`, or their equivalents.
+Compile a template with LuaLaTeX:
 
 ```bash
 cd latex/templates
-latexmk -xelatex -pdfxe presentation.tex
+latexmk -lualatex presentation.tex
 ```
 
 ## Layout
