@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{geometry,microtype}
+\usepackage{amsmath,amssymb}
+\setmainfont[
+    Path=../fonts/,
+    UprightFont={Merriweather-VariableFont_opsz,wdth,wght.ttf},
+    ItalicFont={Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf}
+]{Merriweather}
+\setsansfont[
+    Path=../fonts/,
+    UprightFont={Inter-VariableFont_opsz,wght.ttf},
+    ItalicFont={Inter-Italic-VariableFont_opsz,wght.ttf}
+]{Inter}
+\setmonofont[
+    Path=../fonts/,
+    UprightFont={GeistMono-VariableFont_wght.ttf},
+    ItalicFont={GeistMono-Italic-VariableFont_wght.ttf}
+]{Geist Mono}
+\newfontfamily\displayfont[
+    Path=../fonts/,
+    UprightFont={PlayfairDisplay-VariableFont_wght.ttf},
+    ItalicFont={PlayfairDisplay-Italic-VariableFont_wght.ttf}
+]{Playfair Display}
+
+\usepackage[shore]{../lrssntheme}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=LrssnPrimaryText,
+            citecolor=LrssnPrimaryText,urlcolor=LrssnPrimaryText}
+
+\geometry{left=25mm,right=25mm,top=24mm,bottom=24mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75\baselineskip}
+\pagestyle{plain}
+
+\begin{document}
+
+Begin the paper directly with the first paragraph. This template is useful for
+brief notes, exercises, responses, memos, or submissions that require no title.
+
+\textbf{\textcolor{LrssnPrimaryText}{First point.}}
+Describe the first idea clearly and concisely.
+
+\textbf{\textcolor{LrssnSecondaryText}{Second point.}}
+Continue with a short supporting argument or observation.
+
+\[
+    f(x) = ax^2 + bx + c
+\]
+
+\textbf{\textcolor{LrssnPrimaryText}{Conclusion.}}
+Finish with the main result or next action.
+
+\end{document}

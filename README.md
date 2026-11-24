@@ -148,6 +148,22 @@ The options are:
 The package defines semantic colours such as `LrssnText`, `LrssnPrimary`, `LrssnPrimaryText` and `LrssnKeyword`, so a document looks right with either option.
 The [colour guide](./Theme.md#roles) lists what each role is for.
 
+The `latex/templates/` directory contains ready-to-use XeLaTeX templates:
+
+- `presentation.tex` for Beamer presentations
+- `short-paper-titled.tex` for short papers with a title
+- `short-paper-no-title.tex` for short papers without a title
+- `scientific-paper.tex` for scientific papers
+
+The templates load the Merriweather, Inter, Geist Mono and Playfair Display fonts
+from `latex/fonts/`. Keep the fonts beside the `latex/` directory and compile a
+template with XeLaTeX:
+
+```bash
+cd latex/templates
+latexmk -xelatex -pdfxe presentation.tex
+```
+
 ## Layout
 
 - `palette/`: the two palettes, which are the source of every colour.

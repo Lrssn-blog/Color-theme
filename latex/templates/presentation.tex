@@ -1,0 +1,156 @@
+\documentclass[11pt,aspectratio=169]{beamer}
+
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{booktabs}
+\usepackage{listings}
+
+\setmainfont[
+    Path=../fonts/,
+    UprightFont={Merriweather-VariableFont_opsz,wdth,wght.ttf},
+    ItalicFont={Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf}
+]{Merriweather}
+\setsansfont[
+    Path=../fonts/,
+    UprightFont={Inter-VariableFont_opsz,wght.ttf},
+    ItalicFont={Inter-Italic-VariableFont_opsz,wght.ttf}
+]{Inter}
+\setmonofont[
+    Path=../fonts/,
+    UprightFont={GeistMono-VariableFont_wght.ttf},
+    ItalicFont={GeistMono-Italic-VariableFont_wght.ttf}
+]{Geist Mono}
+\newfontfamily\displayfont[
+    Path=../fonts/,
+    UprightFont={PlayfairDisplay-VariableFont_wght.ttf},
+    ItalicFont={PlayfairDisplay-Italic-VariableFont_wght.ttf}
+]{Playfair Display}
+
+\usepackage[hearth,nolistings]{../lrssntheme}
+\usepackage{hyperref}
+
+\setbeamerfont{title}{family=\displayfont,series=\bfseries,size=\huge}
+\setbeamerfont{subtitle}{family=\sffamily,size=\large}
+\setbeamerfont{author}{family=\sffamily,size=\normalsize}
+\setbeamerfont{institute}{family=\sffamily,size=\small}
+\setbeamerfont{frametitle}{family=\displayfont,series=\bfseries,size=\Large}
+\setbeamercolor{normal text}{fg=LrssnText,bg=LrssnBackground}
+\setbeamercolor{title}{fg=LrssnPrimaryText}
+\setbeamercolor{subtitle}{fg=LrssnMuted}
+\setbeamercolor{author}{fg=LrssnText}
+\setbeamercolor{institute}{fg=LrssnMuted}
+\setbeamercolor{frametitle}{fg=LrssnPrimaryText}
+\setbeamercolor{block title}{fg=LrssnOnPrimary,bg=LrssnPrimary}
+\setbeamercolor{block body}{fg=LrssnText,bg=LrssnSurface}
+\setbeamercolor{block title alerted}{fg=LrssnOnPrimary,bg=LrssnError}
+\setbeamercolor{block body alerted}{fg=LrssnText,bg=LrssnSurface}
+\setbeamercolor{item}{fg=LrssnPrimaryText}
+\setbeamercolor{structure}{fg=LrssnSecondaryText}
+\setbeamercolor{footline}{fg=LrssnMuted}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\textcolor{LrssnPrimaryText}{$\bullet$}}
+\setbeamertemplate{itemize subitem}{\textcolor{LrssnSecondaryText}{$\circ$}}
+\setbeamertemplate{footline}{
+    \hfill\textcolor{LrssnMuted}{\insertframenumber/\inserttotalframenumber}\hspace{5mm}\vspace{3mm}
+}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=LrssnPrimaryText,
+    urlcolor=LrssnPrimaryText
+}
+
+\title{Presentation Title}
+\subtitle{A clear subtitle or topic}
+\author{Author Name}
+\institute{Organisation Name}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+\begin{itemize}
+    \item Introduce the problem
+    \item Present the method
+    \item Show the main results
+    \item Discuss the next steps
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Key idea}
+\begin{block}{Core message}
+    State the central idea of the presentation in one concise sentence.
+\end{block}
+
+\vspace{4mm}
+\begin{columns}[t]
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{LrssnPrimaryText}{Input}}
+\begin{itemize}
+    \item Data
+    \item Constraints
+    \item Assumptions
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\textcolor{LrssnSecondaryText}{Output}}
+\begin{itemize}
+    \item Result
+    \item Evidence
+    \item Recommendation
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Process}
+\begin{center}
+\begin{tikzpicture}[node distance=15mm,
+    box/.style={rectangle,rounded corners=2pt,draw=LrssnRule,fill=LrssnSurface,
+                text=LrssnText,minimum width=38mm,minimum height=12mm,align=center},
+    action/.style={box,fill=LrssnPrimarySoft,text=LrssnPrimaryText},
+    arrow/.style={-{Latex[length=2mm]},draw=LrssnMuted,line width=0.8pt}]
+\node[box] (a) {Collect};
+\node[action,right=of a] (b) {Analyse};
+\node[box,right=of b] (c) {Validate};
+\node[action,right=of c] (d) {Share};
+\draw[arrow] (a)--(b); \draw[arrow] (b)--(c); \draw[arrow] (c)--(d);
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{Results}
+\begin{table}
+\centering
+\begin{tabular}{lrr}
+\toprule
+\textbf{Method} & \textbf{Score} & \textbf{Time} \\
+\midrule
+Baseline & 72\% & 10 s \\
+Proposed & 91\% & 7 s \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\[
+E = mc^2
+\]
+\end{frame}
+
+\begin{frame}{Conclusion}
+\begin{alertblock}{Takeaway}
+    Summarise the result and its consequence.
+\end{alertblock}
+\vfill
+\begin{center}
+\textbf{\textcolor{LrssnPrimaryText}{Questions?}}
+\end{center}
+\end{frame}
+
+\end{document}
