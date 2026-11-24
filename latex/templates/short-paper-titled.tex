@@ -1,0 +1,80 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{geometry,microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\setlist{nosep}
+
+\setmainfont[
+    Path=../fonts/,
+    UprightFont={Merriweather-VariableFont_opsz,wdth,wght.ttf},
+    ItalicFont={Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf}
+]{Merriweather}
+\setsansfont[
+    Path=../fonts/,
+    UprightFont={Inter-VariableFont_opsz,wght.ttf},
+    ItalicFont={Inter-Italic-VariableFont_opsz,wght.ttf}
+]{Inter}
+\setmonofont[
+    Path=../fonts/,
+    UprightFont={GeistMono-VariableFont_wght.ttf},
+    ItalicFont={GeistMono-Italic-VariableFont_wght.ttf}
+]{Geist Mono}
+\newfontfamily\displayfont[
+    Path=../fonts/,
+    UprightFont={PlayfairDisplay-VariableFont_wght.ttf},
+    ItalicFont={PlayfairDisplay-Italic-VariableFont_wght.ttf}
+]{Playfair Display}
+
+\usepackage[shore]{../lrssntheme}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=LrssnPrimaryText,
+            citecolor=LrssnPrimaryText,urlcolor=LrssnPrimaryText}
+
+\geometry{left=25mm,right=25mm,top=24mm,bottom=24mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6\baselineskip}
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}
+    {\displayfont\LARGE\bfseries\color{LrssnPrimaryText}\@title\par}
+    \vspace{0.5em}
+    {\large\@author\par}
+    {\small\color{LrssnMuted}\@date\par}
+  \end{center}
+  \vspace{1em}
+}
+\makeatother
+
+\title{Short Paper Title}
+\author{Author Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Write a brief summary of the purpose, method, and main result.
+\end{abstract}
+
+\section{Introduction}
+Introduce the topic and state the question addressed by the paper.
+
+\section{Main content}
+Present the central argument, observation, or method.
+
+\subsection{Example point}
+Use subsections to organise a longer short paper.
+
+\begin{equation}
+    y = mx + c
+\end{equation}
+
+\section{Conclusion}
+Summarise the conclusion and, if useful, identify a next step.
+
+\end{document}

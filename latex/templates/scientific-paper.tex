@@ -1,0 +1,146 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{geometry,microtype,fancyhdr}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,longtable,tabularx}
+\usepackage{graphicx}
+\usepackage{caption,subcaption}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{titlesec}
+\setlist{nosep}
+
+\setmainfont[
+    Path=../fonts/,
+    UprightFont={Merriweather-VariableFont_opsz,wdth,wght.ttf},
+    ItalicFont={Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf}
+]{Merriweather}
+\setsansfont[
+    Path=../fonts/,
+    UprightFont={Inter-VariableFont_opsz,wght.ttf},
+    ItalicFont={Inter-Italic-VariableFont_opsz,wght.ttf}
+]{Inter}
+\setmonofont[
+    Path=../fonts/,
+    UprightFont={GeistMono-VariableFont_wght.ttf},
+    ItalicFont={GeistMono-Italic-VariableFont_wght.ttf}
+]{Geist Mono}
+\newfontfamily\displayfont[
+    Path=../fonts/,
+    UprightFont={PlayfairDisplay-VariableFont_wght.ttf},
+    ItalicFont={PlayfairDisplay-Italic-VariableFont_wght.ttf}
+]{Playfair Display}
+
+\usepackage[shore]{../lrssntheme}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=LrssnPrimaryText,
+    citecolor=LrssnPrimaryText,
+    urlcolor=LrssnPrimaryText,
+    pdftitle={Scientific Paper Title},
+    pdfauthor={Author Name}
+}
+
+\geometry{left=22mm,right=22mm,top=24mm,bottom=24mm,headheight=22pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65\baselineskip}
+
+\titleformat{\section}{\displayfont\Large\bfseries\color{LrssnPrimaryText}}
+{\thesection}{0.7em}{}
+\titleformat{\subsection}{\sffamily\large\bfseries\color{LrssnSecondaryText}}
+{\thesubsection}{0.7em}{}
+\captionsetup{font=small,labelfont={bf,color=LrssnPrimaryText},
+              textfont={color=LrssnMuted}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{LrssnMuted}Short title}
+\fancyhead[R]{\small\color{LrssnMuted}\nouppercase{\leftmark}}
+\fancyfoot[C]{\small\color{LrssnMuted}\thepage}
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}
+    {\displayfont\LARGE\bfseries\color{LrssnPrimaryText}\@title\par}
+    \vspace{0.7em}
+    {\large\@author\par}
+    {\small\color{LrssnMuted}\@date\par}
+  \end{center}
+  \vspace{1em}
+}
+\makeatother
+
+\title{Scientific Paper Title}
+\author{Author Name\\
+        Department, Institution\\
+        \texttt{author@example.org}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+State the research problem, approach, principal result, and significance.
+Keep the abstract to a single focused paragraph.
+\end{abstract}
+
+\textbf{Keywords:} first keyword; second keyword; third keyword
+
+\section{Introduction}
+\label{sec:introduction}
+
+Introduce the field, explain the problem, review its context, and state the
+research question or hypothesis.
+
+\section{Methods}
+\label{sec:methods}
+
+Describe data, materials, variables, experimental setup, and analysis methods
+in sufficient detail for replication.
+
+\subsection{Analysis}
+Define equations and analytical procedures here.
+\[
+    \hat{y}_i = f(x_i;\theta)
+\]
+
+\section{Results}
+\label{sec:results}
+
+\begin{table}[htbp]
+\centering
+\caption{Example experimental results}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Condition} & \textbf{Mean} & \textbf{SD} & \textbf{$n$} \\
+\midrule
+Control & 10.2 & 1.4 & 30 \\
+Treatment & 12.8 & 1.7 & 30 \\
+\bottomrule
+\end{tabular}
+\label{tab:results}
+\end{table}
+
+Report the findings first, then refer to \cref{tab:results} or
+\cref{sec:methods} when relevant.
+
+\section{Discussion}
+\label{sec:discussion}
+
+Interpret the results, relate them to previous work, discuss limitations,
+and explain practical or theoretical significance.
+
+\section{Conclusion}
+Give a concise answer to the research question and identify future work.
+
+\begin{thebibliography}{9}
+\bibitem{example}
+Surname, A. (2026). \emph{Example Scientific Work}.
+Example Journal, 1(1), 1--10.
+\end{thebibliography}
+
+\end{document}
